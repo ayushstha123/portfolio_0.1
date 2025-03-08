@@ -40,7 +40,7 @@ export default function HamburgerAnimation() {
   }, [open]);
 
   return (
-    <div className="absolute top-40" ref={scope}>
+    <div className="absolute top-10 right-0" ref={scope}>
       <motion.button className="bg-red-500" onClick={() => setOpen(!open)} whileTap={{ scale: 0.95 }}>
         Click Me!
       </motion.button>
@@ -49,12 +49,6 @@ export default function HamburgerAnimation() {
           <motion.li className={`${open ? 'block rounded-full p-5 text-white' : 'hidden'}`} key={index}>{item}</motion.li>
         ))}
       </ul>
-      <motion.button
-  className={`${open ? 'block rounded-full p-5 text-white' : 'hidden'} bg-red-500`}
-  onClick={() => setOpen(!open)}
-  whileTap={{ scale: 0.95 }}
->        x
-      </motion.button>
     </div>
   );
 }
