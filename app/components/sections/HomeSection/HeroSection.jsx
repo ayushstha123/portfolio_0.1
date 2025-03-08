@@ -32,9 +32,9 @@ const HeroSection = () => {
                         // style={{
                         //     marginLeft
                         // }}
-                       className="manrope text-sm font-bold md:font-medium md:text-3xl  text-center text-black pb-10">  Crafting Scalable & Modern Web Experiences</motion.div>
-                    <div className="text-white text-center spaicng tracking-wide md:tracking-normal lg:text-center ateoric text-[4rem] sm:text-[6.8rem] lg:text-[15rem] py-2 md:py-12 leading-[4rem] lg:leading-[11rem]">
-                         <TextFade  direction="up"> Full-Stack Developer </TextFade>
+                       className="manrope text-sm  md:text-3xl  text-center text-black pb-10">  Crafting Scalable & Modern Web Experiences</motion.div>
+                    <div className="text-white text-center spaicng tracking-wide md:tracking-normal lg:text-center ateoric text-[4rem] sm:text-[6.8rem] lg:text-[15rem] py-2 md:py-12 mb-10 leading-[4rem] lg:leading-[11rem]">
+                         Full-Stack Developer
                          </div>
                     <div className="w-full flex justify-between items-start gap-6 md:items-center">
                         <p className="text-sm text-start md:text-xl w-1/2 md:w-1/3 text-black  manrope">
