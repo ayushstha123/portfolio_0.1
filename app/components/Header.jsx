@@ -1,19 +1,35 @@
+import Image from 'next/image'
 import React from 'react'
-
+import Link from 'next/link'
 const Header = () => {
   return (
     <section className="max-w-[1400px] bg-transparent mt-10 mx-auto w-full flex px-5 justify-between items-center">
       <div>
-        <h1 className='nebula uppercase text-[10px] sm:text-sm md:text-lg text-white'>Ayuxh</h1>
-        <div className='flex gap-1 md:gap-2 items-center '>
-        <span className='text-green-300 text-sm animate-pulse'>▰</span>
-        <span className='font-mono font-extralight uppercase text-[9px] md:text-sm text-white mt-1 md:mt-0'>Available for collaboration</span>
+        <div className='flex items-center gap-3'>
+          <Link href='/'>
+            <Image
+              src='/svgs/logo.svg'
+              alt='logo'
+              width={20}
+              height={20}
+              className='w-10 h-10 hover:rotate-12 hover:duration-100' />
+          </Link>
+          <div>
+            <h1 className='nebula uppercase text-[10px] sm:text-sm md:text-lg text-white'>Ayuxh</h1>
+            <div className='flex gap-1 md:gap-2 items-center '>
+              <span className='text-green-400 text-sm animate-pulse'>▰</span>
+              <span className="relative font-mono font-extralight uppercase text-[9px] md:text-sm text-white mt-1 md:mt-0 group">
+                Available for collaboration
+                <span className="absolute left-0 bottom-0 w-full h-[1px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              </span>
+            </div>
+          </div>
         </div>
-        </div>
-        <div className='flex flex-col gap-1 group cursor-pointer'>
-          <div className='w-10 h-[3px] bg-white'></div>
-          <div className='w-10 h-[3px] bg-white group-hover:w-4 group-hover:duration-400'></div>
-        </div>
+      </div>
+      <div className='flex flex-col gap-1 group cursor-pointer'>
+        <div className='w-10 h-[3px] bg-white'></div>
+        <div className='w-10 h-[3px] bg-white group-hover:w-4 group-hover:duration-400'></div>
+      </div>
     </section>
   )
 }

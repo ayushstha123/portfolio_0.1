@@ -1,30 +1,10 @@
 'use client'
-import useMousePosition from '@/app/utils/useMousePosition'
-import React, { useState } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { TextFade } from '../../Animations/TextFadeUp'
+import React from 'react'
+import { motion,} from 'framer-motion'
 const HeroSection = () => {
-    const { scrollY } = useScroll()
-    const marginLeft = useTransform(scrollY, [0, 500], [0, 200])
-    const { x, y } = useMousePosition();
-    const size = 30;
     return (
         <div
         >
-            <img
-                src="/svgs/circle.svg"
-                alt="cursor SVG"
-                style={{
-                    position: 'absolute',
-                    left: x - size / 2,
-                    top: y - size / 2,
-                    width:size,
-                    height:size,
-                    pointerEvents: 'none',
-                    transition: ' 0.1s ease'
-                }}
-                className='md:block hidden'
-            />
             <section className=" max-w-[1400px] mx-auto px-2 flex items-center justify-center">
                 <div className="bg-gradient-to-b grain py-10 px-5 md:px-10 w-full rounded-4xl mt-10">
                     <motion.div
