@@ -19,7 +19,7 @@ const nebula = localFont({
 });
 
 export const metadata = {
-  title: "Ayxsh",
+  title: "Ayxsh - Dev Portfolio",
   description: "This is the portfolio of ayush shrestha , a full stack developer based in nepal",
 };
 
