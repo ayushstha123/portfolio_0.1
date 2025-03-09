@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 const Header = () => {
   return (
-    <section className="max-w-[1400px] bg-transparent mt-10 mx-auto w-full flex px-5 justify-between items-center">
+    <section className="max-w-[1400px] bg-transparent mt-5 md:mt-10 mx-auto w-full flex px-5 justify-between items-center">
       <div>
         <div className='flex items-center gap-3'>
           <Link href='/'>
@@ -12,7 +12,7 @@ const Header = () => {
               alt='logo'
               width={20}
               height={20}
-              className='w-10 h-10 hover:rotate-12 hover:duration-100' />
+              className='w-8 h-8 md:w-10 md:h-10' />
           </Link>
           <div>
             <h1 className='nebula uppercase text-[10px] sm:text-sm md:text-lg text-white'>Ayuxh</h1>
