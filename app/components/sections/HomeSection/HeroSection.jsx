@@ -5,7 +5,7 @@ const HeroSection = () => {
     return (
         <div
         >
-            <section className=" max-w-[1400px] mx-auto px-2 flex items-center justify-center">
+            <section className="max-w-[1400px] mx-auto px-2 pb-20 flex items-center justify-center">
                 <div className="bg-gradient-to-b grain py-10 px-5 md:px-10 w-full rounded-4xl mt-10">
                     <motion.div
                         transition={{ type: "spring", stiffness: 100, velocity: 2 }}
@@ -13,7 +13,7 @@ const HeroSection = () => {
                         //     marginLeft
                         // }}
                        className="manrope text-sm  md:text-3xl  text-center text-black pb-10">  Crafting Scalable & Modern Web Experiences</motion.div>
-                    <div className="text-white text-center spaicng tracking-wide md:tracking-normal lg:text-center ateoric text-[4rem] sm:text-[6.8rem] lg:text-[15rem] py-2 md:py-12 mb-10 leading-[4rem] lg:leading-[11rem]">
+                    <div className="text-white text-center spaicng tracking-wide md:tracking-normal lg:text-center nebula text-[4rem] sm:text-[6.8rem] lg:text-[10rem] py-2 md:py-12 mb-10 leading-[4rem] lg:leading-[9rem]">
                          Full-Stack Developer
                          </div>
                     <div className="w-full flex justify-between items-start gap-6 md:items-center">
