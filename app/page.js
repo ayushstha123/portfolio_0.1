@@ -6,6 +6,9 @@ export default function Home() {
     <div >
       <HeroSection />
       <About />
+      <HeroSection />
+      <HeroSection />
+      <HeroSection />
     
     </div>
   );

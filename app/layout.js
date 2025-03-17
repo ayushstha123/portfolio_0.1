@@ -3,9 +3,9 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 
-const ateoric = localFont({
-  src: "../public/fonts/Aldridge.ttf",
-  variable: "--font-ateoric",
+const nebula = localFont({
+  src: "../public/fonts/nebula.ttf",
+  variable: "--font-nebula",
 });
 
 const manrope = Manrope({
@@ -13,9 +13,9 @@ const manrope = Manrope({
   variable: "--font-manrope",
 });
 
-const nebula = localFont({
-  src: "../public/fonts/Nebula.ttf",
-  variable: "--font-nebula",
+const nohemi = localFont({
+  src: "../public/fonts/Nohemi.otf",
+  variable: "--font-nohemi",
 });
 
 export const metadata = {
@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${ateoric.variable} ${manrope.variable} ${nebula.variable}`}>
+    <html lang="en" className={`${nebula.variable} ${manrope.variable} ${nohemi.variable}`}>
       <body>
       <Header/>
         {children}

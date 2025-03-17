@@ -16,8 +16,8 @@ const Header = () => {
           </Link>
           <div>
             <h1 className='nebula uppercase text-[10px] sm:text-sm md:text-lg text-white'>Ayuxh</h1>
-            <div className='flex gap-1 md:gap-2 items-center '>
-              <span className='text-green-400 text-sm animate-pulse'>▰</span>
+            <div className='flex gap-1 md:gap-1 items-center '>
+              <span className='text-green-400 text-lg animate-pulse'>▼</span>
               <span className="relative font-mono font-extralight uppercase text-[9px] md:text-sm text-white mt-1 md:mt-0 group">
                 Available for collaboration
                 <span className="absolute left-0 bottom-0 w-full h-[1px] bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
