@@ -21,6 +21,7 @@ const LetterStagger = ({ children, speed = 30 }) => {
             {children.split("").map((char, index) => (
                 <motion.span
                     key={index}
+                    className={`${index === 5 ? 'rotate-180':''}`}
                     variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
                 >
                     {char}
