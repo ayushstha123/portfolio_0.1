@@ -10,8 +10,8 @@ const About = () => {
   const height = useTransform(scrollYProgress, [0, 1], ["30rem", "60rem"]);
 
   return (
-    <div className="bg-neutral-300 border-t border-black">
-    <div className="max-w-[1400px]   mx-auto px-2 flex flex-col items-center gap-10">
+    <div className="bg-neutral-300 border-t py-20 border-black">
+    <div className="max-w-[1400px] mx-auto px-5 flex flex-col items-center gap-10">
       {/* Middle Section */}
       <div className="py-10 rounded-4xl flex flex-col md:flex-row items-center justify-between w-full">
 
@@ -36,9 +36,9 @@ const About = () => {
           </h2>
         </motion.div>
 
-        <h2 className="text-sm md:text-xl  w-full md:w-[20%] text-center md:text-end capitalize text-black manrope leading-tight px-8">
+        <p className="text-sm md:text-xl  w-full md:w-[20%] text-center md:text-end capitalize text-black manrope leading-tight px-8">
           crafting clean, maintainable code that enhances user experience and drives engagement and love.
-        </h2>
+        </p>
       </div>
     </div>
     </div>

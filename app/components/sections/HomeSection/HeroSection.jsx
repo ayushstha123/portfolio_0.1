@@ -5,8 +5,8 @@ import FadeUpText from '../../Animations/TextFadeUp';
 const HeroSection = () => {
     return (
         <div className='bg-neutral-300'>
-            <section className="max-w-[1400px] mx-auto px-2 pb-10 flex items-center justify-center">
-                <div className="py-10 px-5 md:px-10 w-full rounded-4xl mt-10">
+            <section className="max-w-[1400px] mx-auto px-5 pb-10 flex items-center justify-center">
+                <div className="py-10 w-full rounded-4xl mt-10">
 
                         <FadeUpText >
                             <p className="manrope text-sm md:text-xl text-center text-black pb-5"
