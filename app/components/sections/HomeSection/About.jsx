@@ -25,7 +25,7 @@ const About = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mt-12 flex items-center justify-center 
-                     shadow-[0_0_50px_20px_theme(colors.neutral-200)] 
+                     shadow-[0_0_80px_80px_theme(colors.neutral-100)] 
                      bg-[radial-gradient(closest-side,theme(colors.white),theme(colors.neutral.300))] 
                      rounded-full  w-[clamp(10rem, 50vw, 40rem)] h-[clamp(10rem, 50vw, 40rem)]"
         >

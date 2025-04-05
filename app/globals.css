@@ -9,9 +9,9 @@ body {
 
 .nebula{
   font-family: var(--font-nebula);
-    font-weight:bold;
-  letter-spacing: 3px;
-  transform: scaleY(1.3);
+    font-weight:bolder;
+  letter-spacing: 2px;
+  transform: scaleY(1.4);
 }
 
 .nohemi{

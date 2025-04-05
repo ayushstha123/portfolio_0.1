@@ -4,7 +4,7 @@ import FadeUpText from '../../Animations/TextFadeUp';
 
 const HeroSection = () => {
     return (
-        <div className='bg-neutral-300'>
+        <div className='bg-neutral-200'>
             <section className="max-w-[1400px] mx-auto px-5 pb-10 flex items-center justify-center">
                 <div className="py-10 w-full rounded-4xl mt-10">
 

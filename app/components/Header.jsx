@@ -19,8 +19,8 @@ const Header = () => {
           <div>
             <h1 className='nebula uppercase text-[10px] sm:text-sm md:text-lg  text-black'>Ayuxh</h1>
             <div className='flex items-center gap-1 md:gap-1 '>
-              <span className='text-green-400 text-lg animate-pulse'>▼</span>
-              <span className="relative manrope font-extralight uppercase text-[9px] md:text-sm text-black mt-1 md:mt-0 group">
+              <span className='text-neutral-800 text-lg animate-pulse'>▼</span>
+              <span className="relative manrope uppercase text-[9px] md:text-sm text-neutral-900 mt-1 md:mt-0 group">
                 Available for collaboration
                 <span className="absolute  left-0 bottom-0 w-full h-[1px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
 
