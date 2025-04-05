@@ -6,8 +6,8 @@ const About = () => {
   const { scrollYProgress } = useScroll();
 
   // Transform scroll progress (0 to 1) to rem values
-  const width = useTransform(scrollYProgress, [0, 1], ["30rem", "60rem"]);
-  const height = useTransform(scrollYProgress, [0, 1], ["30rem", "60rem"]);
+  const width = useTransform(scrollYProgress, [0, 1], ["30rem", "55rem"]);
+  const height = useTransform(scrollYProgress, [0, 1], ["30rem", "55rem"]);
 
   return (
     <div className="bg-neutral-300 border-t py-20 border-black">
