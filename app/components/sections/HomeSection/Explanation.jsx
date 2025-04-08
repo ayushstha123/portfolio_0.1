@@ -2,8 +2,10 @@
 'use client'
 import React from 'react';
 import LetterStagger from '../../Animations/StraggerAnimation';
-import {  motion, useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Image from 'next/image';
+import FadeUpText from '../../Animations/TextFadeUp';
 
 const Explanation = () => {
   const gridRef = useRef(null);
@@ -20,7 +22,7 @@ const Explanation = () => {
       y: 0,
       scale: 1,
       transition: {
-        type:'spring',
+        type: 'spring',
         damping: 12,
         stiffness: 100,
       },
@@ -30,28 +32,43 @@ const Explanation = () => {
   return (
     <div className='bg-neutral-200 pt-20'>
       <div className='max-w-[1400px] mx-auto px-5'>
-        <h2 className="text-black text-start nohemi text-[4rem] sm:text-[6.8rem] lg:text-[10rem] leading-[4rem] lg:leading-[12rem]">
-          <LetterStagger speed={30}>About Me </LetterStagger><span className=' font-bold text-[12rem]'>↗</span>
+        <h2 className="text-black text-start nohemi text-[4rem] sm:text-[6.8rem] lg:text-[8rem] leading-[4rem] lg:leading-[12rem]">
+          <LetterStagger speed={30}>About Me </LetterStagger><span className=' font-bold text-[9rem]'>↗</span>
         </h2>
         <div className='flex items-end justify-end'>
-          <p className="text-sm md:text-xl w-1/2 pb-10 text-center md:text-end capitalize text-black manrope leading-tight ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint illo tenetur eaque quod aspernatur officia porro rerum temporibus doloribus alias!
+          <p className="text-sm md:text-xl w-1/2 pb-10 text-center md:text-end text-black manrope leading-tight ">
+            Hi, I’m Ayush Shrestha, a full-stack developer who thrives on crafting websites that stand out. I’ve always been fascinated by the power of code, and I channel that passion into every project I take on.
           </p>
         </div>
         <div ref={gridRef} className='grid grid-cols-3 gap-10'>
           <motion.div
-            className='bg-neutral-300'
+            className='bg-white '
             variants={jumpInVariants}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
-          />
+          >
+
+            <Image
+              width={300}
+              height={300}
+              src="/photos/Aayush.webp"
+              className='grayscale w-full'
+              alt="portfolio content " />
+          </motion.div>
           <motion.div
-            className='bg-neutral-300 h-80 '
+            className='bg-gradient-to-t to-neutral-300 from-white shadow-2xs h-auto p-5'
             variants={jumpInVariants}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
             transition={{ delay: 0.1 }} // Add a slight delay for staggered effect
-          />
+          >
+
+            <p className="text-sm md:text-[3.5rem] text-center md:text-start text-black nohemi uppercase leading-tight ">
+              <FadeUpText>
+                From sleek front-end designs to scalable back-end systems :)
+              </FadeUpText>
+            </p>
+          </motion.div>
           <motion.div
             className='bg-neutral-300 h-80 '
             variants={jumpInVariants}

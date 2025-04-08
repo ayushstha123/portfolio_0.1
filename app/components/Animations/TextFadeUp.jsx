@@ -12,7 +12,7 @@ const FadeUpText = ({ children }) => {
       ref={ref}
       initial={{ opacity: 0}}
       animate={isInView ? { opacity: 1 } : {}}
-      transition={{delay:0.4, ease: "easeOut" }}
+      transition={{delay:0.2, ease: "easeOut" }}
       className="w-full"
     >
       {children}
