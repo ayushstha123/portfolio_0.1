@@ -6,6 +6,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
 import FadeUpText from '../../Animations/TextFadeUp';
+import { InfiniteScroll } from '../../InfinityLoop';
 
 const Explanation = () => {
   const gridRef = useRef(null);
@@ -42,21 +43,22 @@ const Explanation = () => {
         </div>
         <div ref={gridRef} className='grid grid-cols-3 gap-10'>
           <motion.div
-            className='bg-white '
+            className='bg-white h-[28rem] relative'
             variants={jumpInVariants}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
           >
-
-            <Image
-              width={300}
-              height={300}
-              src="/photos/Aayush.webp"
-              className='grayscale w-full'
-              alt="portfolio content " />
+            <div className='w-full h-[28rem] bg-start bg-blend-difference '>
+              <Image
+                fill
+                src="/photos/Aayush.webp"
+                className='grayscale object-cover '
+                alt="portfolio content"
+              />
+            </div>
           </motion.div>
           <motion.div
-            className='bg-gradient-to-t to-neutral-300 from-white shadow-2xs h-auto p-5'
+            className='bg-gradient-to-t to-neutral-300 from-white shadow-2xl h-[28rem] p-5'
             variants={jumpInVariants}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
@@ -70,12 +72,14 @@ const Explanation = () => {
             </p>
           </motion.div>
           <motion.div
-            className='bg-neutral-300 h-80 '
+            className='bg-neutral-300 h-[28rem] overflow-hidden'
             variants={jumpInVariants}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
             transition={{ delay: 0.1 }} // Add a further delay
-          />
+          >
+            <InfiniteScroll/>
+          </motion.div>
         </div>
       </div>
     </div>
